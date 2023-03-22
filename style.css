@@ -7,13 +7,35 @@
     background: var(--secondary);
 }
 
-input:-internal-autofill-previewed[type="password"],
-input:-internal-autofill-selected[type="password"] {
-    display: none !important;
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+.form-control:active,
+.form-control:focus{
+    border: 2px solid #49670B !important;
+    box-shadow: 0 0 0 .25 #49670B !important;
+}
+.form-control:valid,
+.form-control:default{
+    border: 2px solid #dee2e6 !important;
+    box-shadow: 0 0 0 .25 #dee2e6 !important;
+}
+
+.form-control:invalid + div{
+    color: red !important;
+}
+
+.form-control:invalid{
+    border: 2px solid red;
+}
+
+.form-control-invalid{
+    border: 2px solid red !important;
+}
+
+.form-control-invalid + div{
+    color: red !important;
+}
+
+.form-control:valid + div{
+    visibility: hidden !important;
 }
 
 
-div[pseudo="-webkit-credentials-auto-fill-button"]:focus{
-    display: none !important;
-}
