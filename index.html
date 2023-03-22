@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">K.Z Agro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid hero">
+        <div class="row py-5 gap-2 justify-content-center align-items-center">
+            <div class="col-md-5 mb-4 text-center text-md-start">
+                <p class="display-4 display-lg-3">
+                    Let us help you run your farming business.
+                </p>
+                <p class="text-muted">
+                    Our registration process is quick and easy, taking no more than 10 min to complete
+                </p>
+            </div>
+            <div class="col-md-5 text-center  d-md-block">
+                <img src="https://source.unsplash.com/vrbZVyX2k4I" class="img-fluid rounded" alt="seedlings">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section-form">
+        <div class="row pt-4 justify-content-center align-items-center">
+            <div class="col-md-10 mb-2  text-center text-md-start">
+                <p class="h4"> Get started</p>
+                <p class="text-muted">Create your account now</p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <form action="" class="col-md-10 " autocomplete="off">
+                <div class="row col-md-12">
+                        <div class="mb-3 col-md-6">
+                            <label for="fullName" class="form-label">Fullname</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Kizito Damian">
+                            <div id="fullNameHelp" class="form-text">FullName cannot be empty</div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="usermail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="usermail" placeholder="kizito@example.com">
+                            <div id="useremailhelp" class="form-text">We'll never share your email with anyone else</div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="userphone" class="form-label">Telephone</label>
+                            <input type="tel" class="form-control" id="userphone" placeholder="+234(0) *** *** ***">
+                            <div id="userphonehelp" class="form-text">We'll never share your email with anyone else</div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="psw" class="form-label">Password</label>
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <input type="password" class="form-control" id="psw" autocomplete="off">
+                                <span style="position: absolute; right: 10px;"><i class="far fa-eye" id="togglePassword" style=" cursor: pointer;"></i></span>
+                            </div>
+                            <div id="pswhelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="confirmpsw" class="form-label">Confirm Password</label>
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <input type="password" class="form-control" id="confirmpsw" autocomplete="off">
+                                <span style="position: absolute; right: 10px;"><i class="far fa-eye" id="togglePassword" style=" cursor: pointer;"></i></span>
+                            </div>
+                            <div id="confirmpswhelp" class="form-text">wrong</div>
+                        </div>
+                        <div class="d-grid gap-2 d-lg-block mb-3">
+                            <button style="min-width: 120px; background-color: #49670B; border: #49670B;" type="submit" class="btn btn-primary">Sign up</button>
+                        </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
