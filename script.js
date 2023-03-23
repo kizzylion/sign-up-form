@@ -3,7 +3,7 @@ const togglePassword2 = document.querySelector('#togglePassword2');
 const password = document.querySelector('#psw');
 const confirmPassword = document.querySelector("#confirmpsw")
 let psw = document.querySelector('#psw').value;
-let confirmPsw = document.querySelector("#confirmpsw")
+let confirmPsw = document.querySelector("#confirmpsw").value
 
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -20,4 +20,5 @@ togglePassword2.addEventListener('click', function (e) {
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
+
 

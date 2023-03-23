@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Sign-up Form</title>
 </head>
-<body>
+<body class="container-lg">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">K.Z Agro</a>
@@ -37,71 +37,74 @@
         </div>
     </nav>
 
-    <div class="container-fluid hero">
-        <div class="row py-5 gap-2 justify-content-center align-items-center">
-            <div class="col-md-5 mb-4 text-center text-md-start">
-                <p class="display-4 display-lg-3">
-                    Let us help you run your farming business.
-                </p>
-                <p class="text-muted">
-                    Our registration process is quick and easy, taking no more than 10 min to complete
-                </p>
-            </div>
-            <div class="col-md-5 text-center  d-md-block">
-                <img src="https://source.unsplash.com/vrbZVyX2k4I" class="img-fluid rounded" alt="seedlings">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid section-form">
-        <div class="row pt-4 justify-content-center align-items-center">
-            <div class="col-md-10 mb-2  text-center text-md-start">
-                <p class="h4"> Get started</p>
-                <p class="text-muted">Create your account now</p>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <form action="" class="col-md-10 " autocomplete="off">
-                <div class="row col-md-12">
-                        <div class="mb-3 col-md-6">
-                            <label for="fullName" class="form-label">Fullname</label>
-                            <input type="text" class="form-control" id="fullName" name="userfullname" placeholder="Kizito Damian" required>
-                            <div id="fullNameHelp" class="form-text">Full name cannot be empty</div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="usermail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="usermail" placeholder="kizito@example.com" required>
-                            <div id="useremailhelp" class="form-text">Invalid email</div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="userphone" class="form-label">Telephone</label>
-                            <input type="tel" class="form-control" id="userphone" name="userphone" placeholder="+234(0) 123-456-7890" pattern="^(?:\+234|0)?[789][01]\d{8}$" required>
-                            <div id="userphonehelp" class="form-text">Use a valid Nigeria phone number</div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="psw" class="form-label">Password</label>
-                            <div style="display: block; align-items: center; position: relative;">
-                                <input type="password" class="form-control" id="psw" name="password" autocomplete="off" pattern="^(?=.*[a-zA-Z])(?=.*\d)[^\s\W]{8,20}$" required>
-                                <div id="pswhelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
-                                <span style="position: absolute; top: 6px; right: 10px; top: 6px;"><i class="far fa-eye" id="togglePassword" style=" cursor: pointer;"></i></span>
-                            </div>
-                            
-                        </div>
-                        <div class="mb-3 col-md-6">
-                            <label for="confirmpsw" class="form-label">Confirm Password</label>
-                            <div style="display: block; align-items: center; position: relative;">
-                                <input type="password"  class="form-control" id="confirmpsw" name="confirmPassword" autocomplete="off" pattern="^(?=.*[a-zA-Z])(?=.*\d)[^\s\W]{8,20}$" required>
-                                <div style="display: block;" id="confirmpswhelp" class="form-text">wrong</div>
-                                <span style="position: absolute; right: 10px; top: 6px;"><i class="far fa-eye" id="togglePassword2" style=" cursor: pointer;"></i></span>
-                            </div>
-                            
-                        </div>
-                        <div class="d-grid gap-2 d-lg-block mb-3">
-                            <button style="min-width: 120px; background-color: #49670B; border: #49670B;" type="submit" class="btn btn-primary">Sign up</button>
-                        </div>
+    <div class="row">
+        <div class="container-fluid hero col-lg-6">
+            <div class="row py-5 gap-2 justify-content-center align-items-center">
+                <div class="col-md-5 col-lg-10 mb-4 text-center text-md-start">
+                    <p class="display-4 display-lg-3">
+                        Let us help you run your farming business.
+                    </p>
+                    <p class="text-muted">
+                        Our registration process is quick and easy, taking no more than 10 min to complete
+                    </p>
                 </div>
-            </form>
-            
+                <div class="col-md-5 col-lg-10 text-center  d-md-block" style="position: relative;">
+                    <p class="display-3 text-white fw-bold" style="position: absolute; top: 50%; right: 10%;">Grow</p>
+                    <img src="https://source.unsplash.com/vrbZVyX2k4I" class="img-fluid rounded" alt="seedlings">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid section-form col-lg-6">
+            <div class="row pt-4 justify-content-center align-items-center">
+                <div class="col-md-10 mb-2  text-center text-md-start">
+                    <p class="h4"> Get started</p>
+                    <p class="text-muted">Create your account now</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <form action="" class="col-md-10 " autocomplete="off">
+                    <div class="row col-md-12">
+                            <div class="mb-3 col-md-6 col-lg-12">
+                                <label for="fullName" class="form-label">Fullname</label>
+                                <input type="text" class="form-control" id="fullName" name="userfullname" placeholder="Kizito Damian" required>
+                                <div id="fullNameHelp" class="form-text">Full name cannot be empty</div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-12">
+                                <label for="usermail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="usermail" placeholder="kizito@example.com" required>
+                                <div id="useremailhelp" class="form-text">Invalid email</div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-12">
+                                <label for="userphone" class="form-label">Telephone</label>
+                                <input type="tel" class="form-control" id="userphone" name="userphone" placeholder="+234(0) 123-456-7890" pattern="^(?:\+234|0)?[789][01]\d{8}$" required>
+                                <div id="userphonehelp" class="form-text">Use a valid Nigeria phone number</div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-12">
+                                <label for="psw" class="form-label">Password</label>
+                                <div style="display: block; align-items: center; position: relative;">
+                                    <input type="password" class="form-control" id="psw" name="password" autocomplete="off" pattern="^(?=.*[a-zA-Z])(?=.*\d)[^\s\W]{8,20}$" required>
+                                    <div id="pswhelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+                                    <span style="position: absolute; top: 6px; right: 10px; top: 6px;"><i class="far fa-eye" id="togglePassword" style=" cursor: pointer;"></i></span>
+                                </div>
+                                
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-12">
+                                <label for="confirmpsw" class="form-label">Confirm Password</label>
+                                <div style="display: block; align-items: center; position: relative;">
+                                    <input type="password"  class="form-control" id="confirmpsw" name="confirmPassword" autocomplete="off" pattern="^(?=.*[a-zA-Z])(?=.*\d)[^\s\W]{8,20}$" required>
+                                    <div style="display: block;" id="confirmpswhelp" class="form-text">wrong</div>
+                                    <span style="position: absolute; right: 10px; top: 6px;"><i class="far fa-eye" id="togglePassword2" style=" cursor: pointer;"></i></span>
+                                </div>
+                                
+                            </div>
+                            <div class="d-grid gap-2 d-lg-block mb-3">
+                                <button style="min-width: 120px; background-color: #49670B; border: #49670B;" type="submit" class="btn btn-primary">Sign up</button>
+                            </div>
+                    </div>
+                </form>
+                
+            </div>
         </div>
     </div>
 </body>
